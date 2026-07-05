@@ -85,7 +85,7 @@ export default function TaskApp() {
         {/* Task List */}
         <div className="bg-white rounded-lg shadow md:mt-6">
           <ul className="divide-y divide-gray-200">
-            {[tasks.map((task, index) => (
+            {tasks.map((task, index) => (
               <li key={index} className="p-4 border-b">
                 <span className="font-medium text-gray-900">{task}</span>
                 <span className="text-xs text-gray-400 ml-2">#T{index + 1}</span>
@@ -97,5 +97,3 @@ export default function TaskApp() {
     </div>
   )
 }
-
-export default TaskApp
